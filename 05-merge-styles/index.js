@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { readdir } = require('fs/promises');
 
-let pathStyle = path.join(__dirname, '\\styles');
-let testStyle = path.join(__dirname, 'project-dist', '\\bundle.css');
+let pathStyle = path.join(__dirname, 'styles');
+let testStyle = path.join(__dirname, 'project-dist', 'bundle.css');
 
 (async () => {
   const styleFiles = await readdir(pathStyle, { withFileTypes: true });
